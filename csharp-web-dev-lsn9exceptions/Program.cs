@@ -1,4 +1,8 @@
-﻿using System;
+﻿
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
@@ -30,7 +34,8 @@ namespace csharp_web_dev_lsn9exceptions
         {
             if (fileName == null || fileName == "")
             {
-                throw new ArgumentOutOfRangeException("fileName", "Please submit somework");
+                throw new ArgumentOutOfRangeException(paramName: fileName, message: "Please submit somework");
+                //return 0;
             }
             else
             {
@@ -82,5 +87,3 @@ namespace csharp_web_dev_lsn9exceptions
         }
     }
 }
-    
-
